@@ -55,6 +55,21 @@ body {
   background-color: var(--apple-red) !important;
 }
 
+.glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .column-header-blue {
   border-bottom: 4px solid var(--apple-blue);
 }
